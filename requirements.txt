@@ -1,0 +1,7 @@
+requests-futures
+orjson
+pyfiglet
+BeautifulSoup4
+discord-webhook
+requests
+colorama
