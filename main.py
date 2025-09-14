@@ -15,7 +15,6 @@ def get_content_from_sources():
     proxy information, removes duplicates, and sorts the proxies.
     """
     sources = [
-        'https://proxs.ru/freeproxy_efab2cc53937074.txt',
         'https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all',
         'http://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/https.txt',
         'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',
