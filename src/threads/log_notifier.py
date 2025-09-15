@@ -11,17 +11,9 @@ def send_to_server(name, id, members, robx, clothin, gams, gamevisi):
     embed = DiscordEmbed(
         title=f"{name}",
         url=f"https://roblox.com/groups/{id}",
-        color=000000,
-    )
-    embed.set_footer(
-        text="Luminance | Premium",
-        icon_url="https://cdn.discordapp.com/emojis/1158060888041979934.webp?size=48&amp;quality=lossless"
+        color=0x000000,  # black
     )
     embed.set_thumbnail(url=groupimage(id))
-    embed.set_author(
-        name="Luminance",
-        icon_url="https://see.fontimg.com/api/rf5/VG0w0/NTY5OWI5YzQxZDA3NDRmYWIxMzk2ZDZmNDQ4YTliOWMudHRm/TA/casiopeia.png?r=fs&h=66&w=1000&fg=FFFFFF&bg=353D4B&tb=1&s=66"
-    )
 
     embed.add_embed_field(name="Group ID", value=str(id))
     embed.add_embed_field(name="Group Members", value=str(members))
@@ -30,13 +22,13 @@ def send_to_server(name, id, members, robx, clothin, gams, gamevisi):
     embed.add_embed_field(name="Group Games", value=str(gams))
     embed.add_embed_field(name="Group G-Visits", value=str(gamevisi))
 
-    data = {
-        "content": f"[@here] https://roblox.com/groups/{id}",
-        "embeds": [embed]
-    }
-
-    webhook = DiscordWebhook(url=webhook_url, **data)
+    webhook = DiscordWebhook(
+        url=webhook_url,
+        content=f"[@here] https://roblox.com/groups/{id}"
+    )
+    webhook.add_embed(embed)
     webhook.execute()
+
 
 def log_notifier(log_queue, webhook_url):
     while True:
