@@ -6,7 +6,7 @@
 
 # Usage
 ```bash
-python finder.py -w 30 -p proxies.txt
+python main.py -w 30 -p proxies.txt
 ```
 ```
 -w <num>, --workers <num>
