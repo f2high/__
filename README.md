@@ -31,8 +31,6 @@ The `--cut-off` argument specifies at which ID (and above) missing groups should
 
 # 📺 Watch the tutorial here: https://youtu.be/ifYSVC3BdPo
 
-
-> **I would prefer using paid proxies 'http' type and a decent vps with good specifications.**
-
-> **Sub to me if this helped https://www.youtube.com/@f2_high**
+> 💡 Recommendation: For best performance, I suggest using paid HTTP proxies along with a reliable VPS that has solid specifications.
+> 🔔 Subscribe here if you found this helpful: https://www.youtube.com/@f2_high
 
