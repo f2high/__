@@ -6,7 +6,7 @@
 
 # Usage
 ```bash
-python finder.py --workers 30 --proxy-file proxies.txt
+python finder.py -w 30 -p proxies.txt
 ```
 ```
 -w <num>, --workers <num>
@@ -17,8 +17,6 @@ python finder.py --workers 30 --proxy-file proxies.txt
                       Range(s) of group IDs
 -p <file>, --proxy-file <file>
                       File containing HTTP proxies
--u <url>, --webhook-url <url>
-                      Send group results to <url>
 -c <id>, --cut-off <id>
                       ID limit for skipping missing groups
 -C <size>, --chunk-size <size>
