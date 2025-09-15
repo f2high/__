@@ -29,8 +29,7 @@ By default, when encountering a missing/deleted group, it's ID will be removed f
 
 The `--cut-off` argument specifies at which ID (and above) missing groups shouldn't be removed from the queue. This is ideal in scenarios where you also wanna scan groups that haven't been created yet.
 
-# Watch for help https://youtu.be/ifYSVC3BdPo
-# Like the vid and subscribe I will be soon posting another group finder and a group checker tool!
+# 📺 Watch the tutorial here: https://youtu.be/ifYSVC3BdPo
 
 
 > **I would prefer using paid proxies 'http' type and a decent vps with good specifications.**
